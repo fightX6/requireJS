@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>requireJS</title> 
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!--This sets the baseUrl to the "scripts" directory, and loads a script that will have a module ID of 'main'-->
+	<!-- 
+		RequireJS 以一个相对的baseUrl的地址加载所有的代码。
+		RequireJS 使用<script>标签的data-main属性来启动脚本加载过程。
+		baseUrl就一般设置到data-main属性相一致的目录，baseUrl亦可通过RequireJS config手动配置。
+		如果没有显示制定config及data-main，则默认的baseUrl为包含RequireJS的那个HTML页面的所属目录。
+		RequireJS config的配置请前往main.js中查看
+		注意：你在main.js中所设置的脚本是异步加载的，所以如果你在页面中配置了其它JS加载，则不能保证它们所依赖的JS已经加载成功。
+	-->
+	<script data-main="js/main" src="js/require.min.js"></script>
+</head>
+<body>
+	<pre>
+	<code class="html">
+		<span class="comment">
+		&lt;!-- 
+			RequireJS 以一个相对的baseUrl的地址加载所有的代码。
+			RequireJS 使用&lt;script&gt;标签的data-main属性来启动脚本加载过程。
+			baseUrl就一般设置到data-main属性相一致的目录，baseUrl亦可通过RequireJS config手动配置。
+			如果没有显示制定config及data-main，则默认的baseUrl为包含RequireJS的那个HTML页面的所属目录。
+			RequireJS config的配置请前往main.js中查看
+			注意：你在main.js中所设置的脚本是异步加载的，所以如果你在页面中配置了其它JS加载，则不能保证它们所依赖的JS已经加载成功。
+		--&gt;
+		</span>
+		<span class="tag">&lt;<span class="keyword">script</span><span class="attribute"> data-main=<span class="value">"js/main"</span></span><span class="attribute"> src=<span class="value">"js/require.min.js"</span></span>&gt;</span><span class="tag">&lt;/<span class="keyword">script</span>&gt;</span>
+	</code>
+</pre>
+</body>
+</html>
